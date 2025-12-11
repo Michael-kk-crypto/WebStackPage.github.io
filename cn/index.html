@@ -53,6 +53,93 @@
     <meta name="twitter:title" content="WebStack - 收集国内外优秀设计网站、UI设计资源网站、灵感创意网站、素材资源网站，定时更新分享优质产品设计书签。www.webstack.cc">
     <meta name="twitter:description" content="UI设计,UI设计素材,设计导航,网址导航,设计资源,创意导航,创意网站导航,设计师网址大全,设计素材大全,设计师导航,UI设计资源,优秀UI设计欣赏,设计师导航,设计师网址大全,设计师网址导航,产品经理网址导航,交互设计师网址导航,www.webstack.cc">
     <meta name="twitter:image" content="http://www.webstack.cc/assets/images/webstack_banner_cn.png">
+    <style>
+/* 搜索框容器 */
+#search {
+    position: relative;
+    padding: 30px 0 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* 隐藏原本丑陋的单选圆点 */
+.search-type input {
+    display: none;
+}
+
+/* 搜索引擎切换标签 (百度/Google) */
+.search-type {
+    padding: 0;
+    margin: 0 0 10px 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.search-type li label {
+    cursor: pointer;
+    font-size: 14px;
+    color: #888;
+    padding-bottom: 5px;
+    transition: all 0.3s;
+}
+
+/* 选中的标签样式 (加个下划线或变色) */
+.search-type li input:checked + label {
+    color: #3b8cff;
+    font-weight: bold;
+    border-bottom: 2px solid #3b8cff;
+}
+
+/* 巨大的搜索输入框 */
+#super-search-fm {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+#search-text {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 50px; /* 圆角 */
+    padding: 0 60px 0 25px;
+    font-size: 16px;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1); /* 漂亮的阴影 */
+    outline: none;
+    transition: box-shadow 0.3s;
+}
+
+#search-text:focus {
+    box-shadow: 0 4px 30px rgba(59, 140, 255, 0.3);
+}
+
+/* 搜索按钮图标 */
+.submit {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: #3b8cff;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit:hover {
+    background: #2a75e6;
+}
+</style>
+
 </head>
 
 <body class="page-body">
